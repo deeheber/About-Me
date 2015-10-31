@@ -5,6 +5,37 @@
       <title>Code 201-Contact Me!</title>
     </head>
       <body>
-        </p>The contact page is under construction. Reach out to me via the <a href="index.html">social media links.</a></p>
+        <h1 class="pageTitle">Don't be shy, say hi!</h1>
+          <form name="contact_me" action="thank_you.html" method="post">
+            <label for="name">Name: </label>
+            <input type="text" name="full_name" id="name" placeholder="Full Name"><br>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email"placeholder="email@example.com"><br>
+
+            <label for="phoneNum">Phone: </label>
+            <input type="tel" name="phoneNum" id="phoneNum" placeholder="555-555-5555"><br>
+
+            Preferred contact method: <br>
+            <label for="emailMe">Email</label>
+            <input type="radio" name="prefered_contact_method" value="emailContact" id="emailMe">
+            <label for="callMe">Phone </label>
+            <input type="radio" name="prefered_contact_method" value="phoneContact" id="callMe">
+            <br>
+
+            How did you hear about me? <br>
+            <select name="referral_Source">
+              <option value="work">Work</option>
+              <option value="school">School</option>
+              <option value="acquaintance">Mutual Acquaintance</option>
+              <option value="other">Other</option>
+            </select><br>
+
+            What would you like to say? <br>
+            <textarea name="message" placeholder="Message goes here"></textarea>
+            <br>
+
+            <input type="submit" value="Hello there">
+          </form>
       </body>
   </html>
