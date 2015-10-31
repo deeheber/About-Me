@@ -3,14 +3,15 @@
 body{
   background-color: rgb(242, 242, 242);
   color: rgb(62, 62, 62);
+  font-family: Helvetica, sans-serif;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3.5em;
 }
 
 p {
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 a {
@@ -23,7 +24,7 @@ a {
 }
 
 /****Extra Styles ****/
-#footer {
+.footer {
   text-align: center;
 }
 
@@ -34,9 +35,10 @@ a {
 
 #contactLink {
   font-size: 2em;
+  text-decoration: none;
 }
 
-#footer p {
+.footer p {
   font-size: 1em;
 }
 
@@ -56,18 +58,40 @@ a {
 
 #main-content {
   overflow: hidden;
-  margin: 2em;
-  padding: 1.25em;
+  margin: 1em;
+  padding: 1em;
+}
+
+#name {
+  margin: 0.4em auto;
+}
+
+#languagesHeading {
+  margin: 0;
+}
+
+#languagesList {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+
+.socialIcon {
+  margin-left: 2%;
 }
 
 #contactLink {
   margin-left: 1em;
+  font-weight: 700;
 }
 
-/****Extra Flair Styles ****/
-.socialIcon img:hover {
-  background: #1f75b7;
+/****Hover Styles ****/
+/*.socialIcon img:hover {
+  background: rgba(153, 153,153, 0.5);
   opacity: 0.5;
-  border: solid #1f75b7 thin;
+  border: solid rgba(153, 153,153, 0.5) thin;
+}*/
+
+#contactLink:hover {
+  color: rgba(153, 153,153, 0.5);
 }
 
