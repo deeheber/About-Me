@@ -16,6 +16,8 @@ p {
 
 a {
   color: #1f75b7;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .socialIcon {
@@ -42,14 +44,33 @@ a {
   font-size: 1em;
 }
 
+/****Form Styles ****/
+form {
+  font-size: 1.75em;
+  line-height: 1.75em;
+}
+
+input {
+  font-size: 0.75em;
+}
+
+select {
+  font-size: 0.75em;
+}
+
+#contactMessage {
+  height: 5em;
+  width: 25em;
+}
+
 /****Positioning ****/
-#left {
+.left {
   float:left;
   width: 45%;
   margin: 1%;
   padding:1%;
 }
-#right {
+.right {
   float: right;
   width: 45%;
   margin: 1%;
@@ -64,6 +85,7 @@ a {
 
 .pageTitle {
   margin: 0.4em auto;
+  text-align: center;
 }
 
 #languagesHeading {
@@ -81,7 +103,6 @@ a {
 
 #contactLink {
   margin-left: 1em;
-  font-weight: 700;
 }
 
 /****Hover Styles ****/
