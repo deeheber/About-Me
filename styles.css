@@ -1,137 +1,120 @@
 /****Base Styles ****/
 
-body{
-  background-color: rgb(242, 242, 242);
-  color: rgb(62, 62, 62);
-  font-family: Helvetica, sans-serif;
-}
+  body{
+    background-color: rgb(242, 242, 242);
+    color: rgb(62, 62, 62);
+    font-family: Helvetica, sans-serif;
+  }
 
-h1 {
-  font-size: 3.5em;
-}
+  h1 {
+    font-size: 3.5em;
+  }
 
-p {
-  font-size: 1.75em;
-}
+  p {
+    font-size: 1.75em;
+  }
 
-a {
-  color: #1f75b7;
-  text-decoration: none;
-  font-weight: 700;
-}
+  a {
+    color: #1f75b7;
+    text-decoration: none;
+    font-weight: 700;
+  }
 
-.socialIcon {
-  height: 2em;
-  width: 2em;
-}
+  .socialIcon {
+    height: 2em;
+    width: 2em;
+  }
 
 /****Extra Styles ****/
-.footer {
-  text-align: center;
-}
+  footer {
+    text-align: center;
+  }
 
-.socialIcon img {
-  height: 2em;
-  width: 2em;
-}
+  .socialIcon img {
+    height: 2em;
+    width: 2em;
+  }
 
-.navLink {
-  font-size: 2em;
-  text-decoration: none;
-  margin-right: 3%;
-}
 
-.footer p {
-  font-size: 1em;
-}
+  footer p {
+    font-size: 1em;
+  }
 
 /****Form Styles ****/
-form {
-  font-size: 1.75em;
-  line-height: 1.75em;
-}
+  form {
+    font-size: 1.75em;
+    line-height: 1.75em;
+  }
 
-input {
-  font-size: 0.75em;
-}
+  input {
+    font-size: 0.75em;
+  }
 
-select {
-  font-size: 0.75em;
-}
+  select {
+    font-size: 0.75em;
+  }
 
-#contactMessage {
-  height: 5em;
-  width: 25em;
-}
+  #contactMessage {
+    height: 5em;
+    width: 25em;
+  }
 
 /****Table Styles ****/
-table {
-    border-collapse: collapse;
-    width: 90%;
-    height: 10%;
-}
+  table {
+      border-collapse: collapse;
+      width: 90%;
+      height: 10%;
+  }
 
-table td {
-    font-size: 1.5em;
-    padding: 1%;
-    border: 1px solid rgb(62, 62, 62);
-}
+  table td {
+      font-size: 1.5em;
+      padding: 1%;
+      border: 1px solid rgb(62, 62, 62);
+  }
 
-.tablebk {
-    color: rgb(242, 242, 242);
-    background-color: rgb(62, 62, 62);
-}
+  .tablebk {
+      color: rgb(242, 242, 242);
+      background-color: rgb(62, 62, 62);
+  }
 
-/****Positioning ****/
-.left {
-  float:left;
-  width: 45%;
-  margin: 1%;
-  padding:1%;
-}
-.right {
-  float: right;
-  width: 45%;
-  margin: 1%;
-  padding:1%;
-}
+/****Layout / Positioning ****/
+  .left {
+    float:left;
+    width: 45%;
+    margin: 1%;
+    padding:1%;
+  }
+  .right {
+    float: right;
+    width: 45%;
+    margin: 1%;
+    padding:1%;
+  }
 
-#main-content {
-  overflow: hidden;
-  margin: 1em;
-  padding: 1em;
-}
+  .main-content {
+    overflow: hidden;
+    margin: 1em;
+    padding: 1em;
+  }
 
-.pageTitle {
-  margin: 0.4em auto;
-  text-align: center;
-}
+  .pageTitle {
+    margin: 0.4em auto;
+    text-align: center;
+  }
 
-#languagesHeading {
-  margin: 0;
-}
+  #languagesHeading {
+    margin: 0;
+  }
 
-#languagesList {
-  margin-top: 0.5em;
-  margin-bottom: 2em;
-}
+  #languagesList {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+  }
 
-.socialIcon {
-  margin-left: 2%;
-}
+  .socialIcon {
+    margin-left: 2%;
+  }
 
-#landingLinks {
-  margin-top: 3%;
-}
 
-/****Hover Styles ****/
-/*.socialIcon img:hover {
-  background: rgba(153, 153,153, 0.5);
-  opacity: 0.5;
-  border: solid rgba(153, 153,153, 0.5) thin;
-}*/
 
-.navLink:hover {
-  color: rgba(153, 153,153, 0.5);
-}
 
