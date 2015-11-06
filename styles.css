@@ -20,21 +20,19 @@
     font-weight: 700;
   }
 
-  .socialIcon {
-    height: 2em;
-    width: 2em;
-  }
 
 /****Extra Styles ****/
-  footer {
-    text-align: center;
-  }
-
   .socialIcon img {
     height: 2em;
     width: 2em;
   }
 
+  .socialIcon img:hover {
+    background-color: rgba(31,117,183, 0.85);
+  }
+  footer {
+    text-align: center;
+  }
 
   footer p {
     font-size: 1em;
@@ -102,19 +100,29 @@
     text-align: center;
   }
 
-  #languagesHeading {
-    margin: 0;
-  }
-
-  #languagesList {
-    margin-top: 0.5em;
-    margin-bottom: 2em;
-  }
 
   .socialIcon {
     margin-left: 2%;
   }
 
+/****Hover Effects ****/
 
+  .langList {
+    visibility: hidden;
+    margin-top: 1.5%;
+    list-style-type: square;
+  }
+
+
+  .languages h2:hover .langList {
+    visibility: visible;
+  }
+
+  .languages h2:hover {
+    color: #1f75b7;
+  }
+
+
+/****Navigation ****/
 
 
