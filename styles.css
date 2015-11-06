@@ -20,6 +20,15 @@
     font-weight: 700;
   }
 
+  a:hover {
+    color: rgb(179, 179, 179);
+  }
+
+  ul {
+    list-style-type: square;
+    line-height: 1.5em;
+  }
+
 
 /****Extra Styles ****/
   .socialIcon img {
@@ -28,8 +37,9 @@
   }
 
   .socialIcon img:hover {
-    background-color: rgba(31,117,183, 0.85);
+    background-color: rgba(179, 179, 179, 0.85);
   }
+
   footer {
     text-align: center;
   }
@@ -110,7 +120,6 @@
   .langList {
     visibility: hidden;
     margin-top: 1.5%;
-    list-style-type: square;
   }
 
 
@@ -119,10 +128,20 @@
   }
 
   .languages h2:hover {
-    color: #1f75b7;
+    color: rgb(179, 179, 179);
   }
 
 
-/****Navigation ****/
+/****Footer Navigation ****/
+  li a:hover {
+    color: rgb(179, 179, 179);
+  }
+
+  .menu li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1.2%;
+  }
+
 
 
