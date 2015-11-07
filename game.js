@@ -1,11 +1,11 @@
 function playGame() {
 
     var correctGuess = false;
-    var validInterest = new Array("Bicycling", "Reading", "Walking my dog", "Daydreaming");
+    var validInterest = new Array("BICYCLING", "READING", "WALKING MY DOG", "DAYDREAMING");
     while (!correctGuess){
         var userGuess = prompt("Enter one of my favorite activities: ", "");
         for (var index = 0; index < validInterest.length; index++){
-          if (userGuess == validInterest[index]){
+          if (userGuess.toUpperCase() === validInterest[index]){
               correctGuess = true;
           }
         }
@@ -17,5 +17,6 @@ function playGame() {
         }
     }
 }
+
 
 
