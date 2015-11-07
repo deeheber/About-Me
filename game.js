@@ -5,7 +5,7 @@ function playGame() {
     while (!correctGuess){
         var userGuess = prompt("Enter one of my favorite activities: ", "");
         for (var index = 0; index < validInterest.length; index++){
-          if (userGuess.toUpperCase() === validInterest[index]){
+          if (userGuess.toUpperCase().trim() === validInterest[index]){
               correctGuess = true;
           }
         }
