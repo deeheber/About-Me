@@ -1,17 +1,30 @@
+//When clicking no on game.html page
+
+function noPlay() {
+  alert("That's ok. If you change your mind, feel free to click the yes button anytime!");
+}
+//When clicking yes on game.html page
 function playGame() {
 
   var score = 0;
+
+  var answer = [
+      ["BICYCLING", "READING", "WALKING MY DOG", "DAYDREAMING"],
+      ["SIX FEET UNDER", "BUFFY THE VAMPIRE SLAYER", "PRETTY LITTLE LIARS", "ARRESTED DEVELOPMENT"],
+      ["DAVID SEDARIS", "SARAH VOWELL", "KURT VONNEGUT", "EDWARD ABBEY"]
+    ];
+
+  var guess = [];
     //Get user name and greet the user by name
 
       var userName = prompt("Enter your name.");
       alert("Hello, " + userName.trim() + "! Let's get started.");
+
     //Question 1
       var correctGuess = false;
-      var question1Answer = new Array("BICYCLING", "READING", "WALKING MY DOG", "DAYDREAMING");
-
-          var userGuess1 = prompt("Name one of my favorite Activities: ", "");
-          for (var index = 0; index < question1Answer.length; index++){
-            if (userGuess1.toUpperCase().trim() === question1Answer[index]){
+      guess.push(prompt("Name one of my favorite Activities: ", ""));
+          for (var index = 0; index < answer[0].length; index++){
+            if (guess[0].toUpperCase().trim() === answer[0][index]){
               correctGuess = true;
             }
           }
@@ -25,11 +38,9 @@ function playGame() {
 
     //Question 2
       correctGuess = false;
-      var question2Answer = new Array("SIX FEET UNDER", "BUFFY THE VAMPIRE SLAYER", "PRETTY LITTLE LIARS", "ARRESTED DEVELOPMENT");
-
-          var userGuess2 = prompt("Name one of my favorite TV shows: ", "");
-          for (var index = 0; index < question2Answer.length; index++){
-            if (userGuess2.toUpperCase().trim() === question2Answer[index]){
+      guess.push(prompt("Name one of my favorite TV Shows: ", ""));
+          for (var index = 0; index < answer[1].length; index++){
+            if (guess[1].toUpperCase().trim() === answer[1][index]){
               correctGuess = true;
             }
           }
@@ -43,11 +54,9 @@ function playGame() {
 
       //Question 3
       correctGuess = false;
-      var question3Answer = new Array("DAVID SEDARIS", "SARAH VOWELL", "KURT VONNEGUT", "EDWARD ABBEY");
-
-          var userGuess3 = prompt("Name one of my favorite Authors (their first and last name): ", "");
-          for (var index = 0; index < question3Answer.length; index++){
-            if (userGuess3.toUpperCase().trim() === question3Answer[index]){
+      guess.push(prompt("Name one of my favorite authors (their first and last name): ", ""));
+          for (var index = 0; index < answer[2].length; index++){
+            if (guess[2].toUpperCase().trim() === answer[2][index]){
               correctGuess = true;
             }
           }

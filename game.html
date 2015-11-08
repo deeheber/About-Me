@@ -8,14 +8,19 @@
       <body>
         <div class="main-content">
           <h1 class="pageTitle">Let's Play a Game</h1>
-          <h2>Instructions: </h2>
-            <ul>
-              <li>Read through all of the pages on this site.</li>
-              <li>Absorb the information.</li>
-              <li>Take this quiz to see how well you know me.</li>
-              <li>Click the button below when you're ready to begin</li>
-            </ul>
-          <button onclick='playGame();'>Start</button>
+          <div class="left">
+            <h2 style="text-transform: uppercase;">Instructions </h2>
+              <ol>
+                <li>Read through all of the pages on this site.</li>
+                <li>Absorb the information.</li>
+                <li>Take this quiz to see how well you know me.</li>
+              </ol>
+          </div>
+          <div class="right">
+            <h2 style="text-transform: uppercase;">Ready to play?</h2>
+            <button onclick='playGame();'>Yes</button>
+            <button onclick='noPlay();'>No</button>
+          </div>
 
         </div>
         <footer>
