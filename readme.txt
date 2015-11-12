@@ -1,3 +1,1 @@
-This is the repository for my first Code 201 Assignment.
-
-More stuff to follow…
+Building an About-Me site using HTML, CSS, and JavaScript.
