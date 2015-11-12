@@ -1,1 +1,1 @@
-Building an About-Me site using HTML, CSS, and JavaScript.
+About-Me site using HTML, CSS, and JavaScript.
