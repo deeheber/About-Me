@@ -1,97 +1,163 @@
 /****Base Styles ****/
 
-body{
-  background-color: rgb(242, 242, 242);
-  color: rgb(62, 62, 62);
-  font-family: Helvetica, sans-serif;
-}
+  body{
+    background-color: rgb(242, 242, 242);
+    color: rgb(62, 62, 62);
+    font-family: Helvetica, sans-serif;
+  }
 
-h1 {
-  font-size: 3.5em;
-}
+  h1 {
+    font-size: 3.5em;
+  }
 
-p {
-  font-size: 1.75em;
-}
+  p {
+    font-size: 1.75em;
+  }
 
-a {
-  color: #1f75b7;
-}
+  a {
+    color: #1f75b7;
+    text-decoration: none;
+    font-weight: 700;
+  }
 
-.socialIcon {
-  height: 2em;
-  width: 2em;
-}
+  a:hover {
+    color: rgb(179, 179, 179);
+  }
+
+  ul {
+    list-style-type: square;
+    line-height: 1.5em;
+  }
+
+  ol {
+    list-style-type: decimal-leading-zero;
+    line-height: 1.5em;
+  }
+
+  button {
+    font-size: 1.2em;
+    margin-right: 4%;
+    border-color: #222;
+  }
+
+  button:hover {
+    background-color: #222;
+    color: white;
+  }
+
 
 /****Extra Styles ****/
-.footer {
-  text-align: center;
-}
+  .socialIcon img {
+    height: 2em;
+    width: 2em;
+  }
 
-.socialIcon img {
-  height: 2em;
-  width: 2em;
-}
+  .socialIcon img:hover {
+    background-color: rgba(179, 179, 179, 0.85);
+  }
 
-#contactLink {
-  font-size: 2em;
-  text-decoration: none;
-}
+  footer {
+    text-align: center;
+  }
 
-.footer p {
-  font-size: 1em;
-}
+  footer p {
+    font-size: 1em;
+  }
 
-/****Positioning ****/
-#left {
-  float:left;
-  width: 45%;
-  margin: 1%;
-  padding:1%;
-}
-#right {
-  float: right;
-  width: 45%;
-  margin: 1%;
-  padding:1%;
-}
+/****Form Styles ****/
+  form {
+    font-size: 1.75em;
+    line-height: 1.75em;
+  }
 
-#main-content {
-  overflow: hidden;
-  margin: 1em;
-  padding: 1em;
-}
+  input {
+    font-size: 0.75em;
+  }
 
-#name {
-  margin: 0.4em auto;
-}
+  select {
+    font-size: 0.75em;
+  }
 
-#languagesHeading {
-  margin: 0;
-}
+  #contactMessage {
+    height: 5em;
+    width: 25em;
+  }
 
-#languagesList {
-  margin-top: 0.5em;
-  margin-bottom: 2em;
-}
+/****Table Styles ****/
+  table {
+      border-collapse: collapse;
+      width: 90%;
+      height: 10%;
+  }
 
-.socialIcon {
-  margin-left: 2%;
-}
+  table td {
+      font-size: 1.5em;
+      padding: 1%;
+      border: 1px solid rgb(62, 62, 62);
+  }
 
-#contactLink {
-  margin-left: 1em;
-  font-weight: 700;
-}
+  .tablebk {
+      color: rgb(242, 242, 242);
+      background-color: rgb(62, 62, 62);
+  }
 
-/****Hover Styles ****/
-/*.socialIcon img:hover {
-  background: rgba(153, 153,153, 0.5);
-  opacity: 0.5;
-  border: solid rgba(153, 153,153, 0.5) thin;
-}*/
+/****Layout / Positioning ****/
+  .left {
+    float:left;
+    width: 45%;
+    margin: 1%;
+    padding:1%;
+  }
+  .right {
+    float: right;
+    width: 45%;
+    margin: 1%;
+    padding:1%;
+  }
 
-#contactLink:hover {
-  color: rgba(153, 153,153, 0.5);
-}
+  .main-content {
+    overflow: hidden;
+    margin: 1em;
+    padding: 1em;
+  }
+
+  .pageTitle {
+    margin: 0.4em auto;
+    text-align: center;
+  }
+
+
+  .socialIcon {
+    margin-left: 2%;
+  }
+
+/****Hover Effects ****/
+
+  .langList {
+    visibility: hidden;
+    margin-top: 1.5%;
+  }
+
+
+  .languages h2:hover .langList {
+    visibility: visible;
+  }
+
+  .languages h2:hover {
+    color: rgb(179, 179, 179);
+  }
+
+
+/****Footer Navigation ****/
+  li a:hover {
+    color: rgb(179, 179, 179);
+  }
+
+  .menu li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1.5%;
+  }
+
+
 

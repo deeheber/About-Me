@@ -5,7 +5,57 @@
       <title>Code 201-Contact Me!</title>
     </head>
       <body>
-        <h1>Just Kidding</h1>
-        </p>The contact page is under construction. Reach out to me via the <a href="index.html">social media links.</a></p>
+        <div class="main-content">
+          <h1 class="pageTitle">Don't be shy, say hi!</h1>
+          <div class="left"> <!-- action="thank_you.html" method="post" -->
+              <form name="contact_me" >
+                <label for="name">Name: </label>
+                <input type="text" name="full_name" id="name" placeholder="Full Name"><br>
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email"placeholder="email@example.com"><br>
+
+                Would you like a reply? <br>
+                <label for="reply-yes">Yes</label>
+                <input type="radio" name="reply" value="yes" id="reply-yes">
+                <label for="reply-no">No </label>
+                <input type="radio" name="reply" value="no" id="reply-no">
+                <br>
+
+                How did you hear about me? <br>
+                <select name="referral_Source">
+                  <option value="work">Work</option>
+                  <option value="school">School</option>
+                  <option value="acquaintance">Mutual Acquaintance</option>
+                  <option value="other">Other</option>
+                </select><br>
+
+                What's on your mind? <br>
+                <textarea name="message" placeholder="Message goes here" id="contactMessage"></textarea>
+
+                <input type="submit" value="Send" onclick="submitForm(this.form.full_name.value)">
+              </form>
+            </div>
+          <div class="right">
+            <h2>I respect your privacy and won't share your contact info with any third parties.</h2>
+            <img src="images/pdx.jpg">
+          </div>
+        </div>
+        <footer>
+          <hr>
+
+          <nav>
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="interests.html">Interests</a></li>
+              <li><a href="game.html">Game</a></li>
+            </ul>
+          </nav>
+
+          <p>All opinions on the internets are my own</p>
+          <p>&copy; <script type="text/javascript"> var year = new Date(); document.write(year.getFullYear());</script></p>
+        </footer>
+        <script type="text/javascript" src="submit.js"></script>
       </body>
   </html>
