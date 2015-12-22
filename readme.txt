@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-This is the repository for my first Code 201 Assignment.
-
-More stuff to follow…
-
+About me site using HTML, CSS, JavaScript.
