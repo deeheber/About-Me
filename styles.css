@@ -29,6 +29,22 @@
     line-height: 1.5em;
   }
 
+  ol {
+    list-style-type: decimal-leading-zero;
+    line-height: 1.5em;
+  }
+
+  button {
+    font-size: 1.2em;
+    margin-right: 4%;
+    border-color: #222;
+  }
+
+  button:hover {
+    background-color: #222;
+    color: white;
+  }
+
 
 /****Extra Styles ****/
   .socialIcon img {
@@ -140,7 +156,7 @@
   .menu li {
     display: inline-block;
     font-size: 1.5em;
-    margin-right: 1.2%;
+    margin-right: 1.5%;
   }
 
 

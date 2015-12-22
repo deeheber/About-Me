@@ -3,16 +3,12 @@
     <head>
       <link rel="stylesheet" type="text/css" href="styles.css">
       <title>Code 201-Contact Me!</title>
-      <script type="text/javascript">
-      var year = new Date();
-      alert("Thanks for visiting my page. Feel free to drop me a line here!");
-      </script>
     </head>
       <body>
         <div class="main-content">
           <h1 class="pageTitle">Don't be shy, say hi!</h1>
-          <div class="left">
-              <form name="contact_me" action="thank_you.html" method="post">
+          <div class="left"> <!-- action="thank_you.html" method="post" -->
+              <form name="contact_me" >
                 <label for="name">Name: </label>
                 <input type="text" name="full_name" id="name" placeholder="Full Name"><br>
 
@@ -37,7 +33,7 @@
                 What's on your mind? <br>
                 <textarea name="message" placeholder="Message goes here" id="contactMessage"></textarea>
 
-                <input type="submit" value="Send">
+                <input type="submit" value="Send" onclick="submitForm(this.form.full_name.value)">
               </form>
             </div>
           <div class="right">
@@ -58,7 +54,8 @@
           </nav>
 
           <p>All opinions on the internets are my own</p>
-          <p>&copy; <script type="text/javascript">document.write(year.getFullYear());</script></p>
+          <p>&copy; <script type="text/javascript"> var year = new Date(); document.write(year.getFullYear());</script></p>
         </footer>
+        <script type="text/javascript" src="submit.js"></script>
       </body>
   </html>
