@@ -1,7 +1,7 @@
 //active link color change
 var pageURL = window.location.pathname;
 pageURL = pageURL.replace(".html", "");
-pageURL = pageURL.replace("/", "");
+pageURL = pageURL.replace("/About-me/", "");
 if(pageURL === "index"){
   pageURL = "home";
 }
