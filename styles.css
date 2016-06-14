@@ -204,6 +204,9 @@
     form {
       font-size: 1em;
     }
+    #contactMessage {
+      width: 20em;
+    }
     table {
       width: 100%;
       overflow-x: scroll;
