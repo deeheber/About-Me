@@ -162,3 +162,10 @@
   .active {
     color: rgb(179, 179, 179);
   }
+
+  /*** Media Queries for Mobile View ***/
+  @media all and (max-width: 770px){
+    body {
+      background-color: red;
+    }
+  }
