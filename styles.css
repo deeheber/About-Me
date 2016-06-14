@@ -15,7 +15,7 @@
   }
 
   a {
-    color: #1f75b7;
+    color: rgb(62, 62, 62);
     text-decoration: none;
     font-weight: 700;
   }
@@ -153,11 +153,12 @@
     color: rgb(179, 179, 179);
   }
 
-  .menu li {
+  .footerNav li {
     display: inline-block;
     font-size: 1.5em;
     margin-right: 1.5%;
   }
 
-
-
+  .active {
+    color: rgb(179, 179, 179);
+  }
