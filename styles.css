@@ -45,6 +45,10 @@
     color: white;
   }
 
+  img {
+    max-width: 100%;
+  }
+
 
 /****Extra Styles ****/
   .socialIcon img {
@@ -161,4 +165,54 @@
 
   .active {
     color: rgb(179, 179, 179);
+  }
+
+  /*** Media Queries for Mobile View ***/
+  @media all and (max-width: 961px){
+    body {
+      /*For testing purposes*/
+      /*background-color: blue;*/
+    }
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.25em;
+    }
+    p {
+      font-size: 1em;
+    }
+    .left, .right {
+      float: none;
+      margin: 0 auto;
+    }
+    .main-content {
+      overflow: visible;;
+    }
+    .footerNav li {
+      display: block;
+      font-size: 1em;
+    }
+    footer {
+      margin: 0 auto;
+      width: 60%;
+    }
+    .socialIcon img {
+      height: 1.5em;
+      width: 1.5em;
+    }
+    form {
+      font-size: 1em;
+    }
+    #contactMessage {
+      width: 20em;
+    }
+    table {
+      width: 100%;
+      overflow-x: scroll;
+      overflow-y: scroll;
+      display: block;
+    }
+
+
   }

@@ -1,12 +1,17 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="styles.css">
       <title>Contact Me!</title>
     </head>
       <body>
         <div class="main-content">
           <h1 class="pageTitle">Don't be shy, say hi!</h1>
+          <div class="right">
+            <h2>I respect your privacy and won't share your contact info with any third parties.</h2>
+            <img src="images/pdx.jpg">
+          </div>
           <div class="left"> <!-- action="thank_you.html" method="post" -->
               <form name="contact_me" >
                 <label for="name">Name: </label>
@@ -36,10 +41,6 @@
                 <input type="submit" value="Send" onclick="submitForm(this.form.full_name.value)">
               </form>
             </div>
-          <div class="right">
-            <h2>I respect your privacy and won't share your contact info with any third parties.</h2>
-            <img src="images/pdx.jpg">
-          </div>
         </div>
         <footer>
           <hr>
