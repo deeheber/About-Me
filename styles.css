@@ -177,4 +177,12 @@
       float: none;
       margin: 0 auto;
     }
+    .footerNav li {
+      display: block;
+    }
+    footer {
+      text-align: left;
+      margin: 0 auto;
+      width: 50%;
+    }
   }
