@@ -173,16 +173,34 @@
       /*For testing purposes*/
       /*background-color: blue;*/
     }
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.25em;
+    }
+    p {
+      font-size: 1em;
+    }
     .left, .right {
       float: none;
       margin: 0 auto;
     }
     .footerNav li {
       display: block;
+      font-size: 1em;
+    }
+    .main-content {
+      overflow: visible;;
     }
     footer {
-      text-align: left;
       margin: 0 auto;
-      width: 50%;
+      width: 60%;
+    }
+    table {
+      width: 100%;
+      overflow-x: scroll;
+      overflow-y: scroll;
+      display: block;
     }
   }
