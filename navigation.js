@@ -2,7 +2,7 @@
 var pageURL = window.location.pathname;
 //Changed for the gh-pages branch since the URL is different on GH Pages
 pageURL = pageURL.slice(10);
-//pageURL = pageURL.replace(".html", "");
+pageURL = pageURL.replace(".html", "");
 if(pageURL === "index"){
   pageURL = "home";
 }
