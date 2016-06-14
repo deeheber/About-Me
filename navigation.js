@@ -5,12 +5,13 @@ pageURL = pageURL.replace("/", "");
 if(pageURL === "index"){
   pageURL = "home";
 }
+console.log(pageURL);
 
 var navLinks = document.querySelectorAll(".footerNav li a");
 for(var i=0; i<navLinks.length; i++){
   var currentNavLink = navLinks[i].textContent.toLowerCase();
   if(pageURL === currentNavLink){
-    navLinks[i].classList.remove("active"); //for later when it's a SPA
+    console.log(currentNavLink);
     navLinks[i].classList.add("active");
   }
 }
