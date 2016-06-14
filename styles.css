@@ -45,6 +45,10 @@
     color: white;
   }
 
+  img {
+    max-width: 100%;
+  }
+
 
 /****Extra Styles ****/
   .socialIcon img {
@@ -164,8 +168,13 @@
   }
 
   /*** Media Queries for Mobile View ***/
-  @media all and (max-width: 770px){
+  @media all and (max-width: 961px){
     body {
-      background-color: red;
+      /*For testing purposes*/
+      /*background-color: blue;*/
+    }
+    .left, .right {
+      float: none;
+      margin: 0 auto;
     }
   }
