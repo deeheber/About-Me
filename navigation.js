@@ -1,11 +1,12 @@
 //active link color change
 var pageURL = window.location.pathname;
-pageURL = pageURL.replace(".html", "");
-pageURL = pageURL.replace("/About-me/", "");
+//Changed for the gh-pages branch since the URL is different on GH Pages
+pageURL = pageURL.slice(10);
+//pageURL = pageURL.replace(".html", "");
 if(pageURL === "index"){
   pageURL = "home";
 }
-console.log(pageURL);
+//console.log(pageURL);
 
 var navLinks = document.querySelectorAll(".footerNav li a");
 for(var i=0; i<navLinks.length; i++){
