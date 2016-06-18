@@ -213,9 +213,9 @@
       width: 100%;
     }
 
-    .open {
+    /*.open {
       display: block;
-    }
+    }*/
 
     .main-content {
       overflow: visible;
