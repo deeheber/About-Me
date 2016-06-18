@@ -187,59 +187,58 @@
     font-size: 2em;
     line-height: 1.2em;
     list-style-type: none;
-    margin-bottom: 1%;
-  }
-
-  .menu ul {
-    margin: 0 auto;
   }
 
   /*** Media Queries for Mobile View ***/
   @media all and (max-width: 961px){
     body {
-      /*For testing purposes*/
-      /*background-color: blue;*/
+      width: 100%;
     }
+
     h1 {
       font-size: 2em;
     }
+
     h2 {
       font-size: 1.25em;
     }
+
     p {
       font-size: 1em;
     }
+
     .left, .right {
       float: none;
       margin: 0 auto;
+      width: 100%;
     }
-    .main-content {
-      overflow: visible;;
-    }
-    /*.menu li {
+
+    .open {
       display: block;
-      font-size: 1em;
-    }*/
-    footer {
-      margin: 0 auto;
-      width: 60%;
     }
+
+    .main-content {
+      overflow: visible;
+    }
+
     .socialIcon img {
       height: 1.5em;
       width: 1.5em;
     }
+
     form {
       font-size: 1em;
     }
+
     #contactMessage {
-      width: 20em;
+      width: 15em;
     }
+
     table {
       width: 100%;
       overflow-x: scroll;
       overflow-y: scroll;
       display: block;
     }
-
 
   }
