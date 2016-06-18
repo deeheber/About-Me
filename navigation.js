@@ -6,7 +6,7 @@ if(pageURL === "index"){
   pageURL = "home";
 }
 
-var navLinks = document.querySelectorAll(".footerNav li a");
+var navLinks = document.querySelectorAll(".menu li a");
 for(var i=0; i<navLinks.length; i++){
   var currentNavLink = navLinks[i].textContent.toLowerCase();
   if(pageURL === currentNavLink){
