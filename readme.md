@@ -1,3 +1,3 @@
 A website that I built about me using HTML, CSS, JavaScript.
 
-*Note*: This was created during my early form web development training and doesn't necessarily reflect my current abilities. Thought it would be a good learning experience to refactor this code, so you might see some activity on this repo.
+This was one of the first complete sites that I built completely from scratch. Code refactor in progress with all of the new knowledge that I've learned since.
