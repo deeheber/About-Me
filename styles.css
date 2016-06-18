@@ -157,14 +157,18 @@
     color: rgb(179, 179, 179);
   }
 
-  /*.menu li {
-    display: inline-block;
+  .menu li {
     font-size: 1.5em;
-    margin-right: 1.5%;
-  }*/
+    list-style-type: none;
+    margin-bottom: 1%;
+  }
 
   .active {
     color: rgb(179, 179, 179);
+  }
+
+  .menu, .close {
+    display: none;
   }
 
   /*** Media Queries for Mobile View ***/

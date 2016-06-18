@@ -1,3 +1,17 @@
+//navigation open/close
+$('.open').on('click', function(){
+  $('.menu').fadeIn(500);
+  $('.close').show();
+  $('.open').hide();
+});
+
+$('.close').on('click', function(){
+  $('.menu').fadeOut(500);
+  $('.open').show();
+  $('.close').hide();
+});
+
+
 //active link color change
 var pageURL = window.location.pathname;
 pageURL = pageURL.replace(".html", "");
