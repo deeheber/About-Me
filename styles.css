@@ -152,67 +152,93 @@
   }
 
 
-/****Footer Navigation ****/
+/**** Navigation  Menu ****/
   li a:hover {
     color: rgb(179, 179, 179);
-  }
-
-  .footerNav li {
-    display: inline-block;
-    font-size: 1.5em;
-    margin-right: 1.5%;
   }
 
   .active {
     color: rgb(179, 179, 179);
   }
 
+  .open {
+    float: left;
+  }
+
+  .close {
+    display: block;
+    height: 2em;
+    margin: 1em;
+    padding: 1em;
+  }
+
+  .menu {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(3,3,3, 0.9);
+  }
+
+  .menu li {
+    font-size: 2em;
+    line-height: 1.2em;
+    list-style-type: none;
+  }
+
   /*** Media Queries for Mobile View ***/
   @media all and (max-width: 961px){
     body {
-      /*For testing purposes*/
-      /*background-color: blue;*/
+      width: 100%;
     }
+
     h1 {
       font-size: 2em;
     }
+
     h2 {
       font-size: 1.25em;
     }
+
     p {
       font-size: 1em;
     }
+
     .left, .right {
       float: none;
       margin: 0 auto;
+      width: 100%;
     }
-    .main-content {
-      overflow: visible;;
-    }
-    .footerNav li {
+
+    /*.open {
       display: block;
-      font-size: 1em;
+    }*/
+
+    .main-content {
+      overflow: visible;
     }
-    footer {
-      margin: 0 auto;
-      width: 60%;
-    }
+
     .socialIcon img {
       height: 1.5em;
       width: 1.5em;
     }
+
     form {
       font-size: 1em;
     }
+
     #contactMessage {
-      width: 20em;
+      width: 15em;
     }
+
     table {
       width: 100%;
       overflow-x: scroll;
       overflow-y: scroll;
       display: block;
     }
-
 
   }
