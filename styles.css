@@ -157,18 +157,41 @@
     color: rgb(179, 179, 179);
   }
 
-  .menu li {
-    font-size: 1.5em;
-    list-style-type: none;
-    margin-bottom: 1%;
-  }
-
   .active {
     color: rgb(179, 179, 179);
   }
 
-  .menu, .close {
+  .open {
+    float: left;
+  }
+
+  .close {
+    display: block;
+    height: 2em;
+    margin: 1em;
+    padding: 1em;
+  }
+
+  .menu {
     display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(3,3,3, 0.9);
+  }
+
+  .menu li {
+    font-size: 2em;
+    line-height: 1.2em;
+    list-style-type: none;
+    margin-bottom: 1%;
+  }
+
+  .menu ul {
+    margin: 0 auto;
   }
 
   /*** Media Queries for Mobile View ***/
