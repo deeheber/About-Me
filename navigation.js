@@ -13,6 +13,9 @@ $('.close').on('click', function(){
   $('.close').hide();
 });
 
+//navigation links
+
+
 
 //active link color change
 var pageURL = window.location.pathname;
