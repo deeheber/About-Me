@@ -17,25 +17,121 @@
           <li><a href="game.html">Game</a></li>
         </ul>
       </nav>
-      <h1 class="pageTitle">Danielle H</h1>
-        <div class="right">
-          <img src="images/danielle.jpeg">
-        </div>
-        <div class="left">
-            <p>I'm a creative individual with a commitment to life long learning powered by a strong belief that technology can transform people's lives.</p>
-            <p>As an aspiring software developer, I have hopes of making the web a better place through minimalist design.</p>
+      <!-- Index/Home Page -->
+      <section id="home">
+        <h1 class="pageTitle">Danielle H</h1>
+          <div class="right">
+            <img src="images/danielle.jpeg">
+          </div>
+          <div class="left">
+              <p>I'm a creative individual with a commitment to life long learning powered by a strong belief that technology can transform people's lives.</p>
+              <p>As an aspiring software developer, I have hopes of making the web a better place through minimalist design.</p>
 
-            <!-- <div class="languages">
-              <h2>Languages I'm Learning &#9660;
-                <ul class="langList">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                </ul>
-              </h2>
-            </div> -->
+              <!-- <div class="languages">
+                <h2>Languages I'm Learning &#9660;
+                  <ul class="langList">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </h2>
+              </div> -->
+            </div>
+        </section>
+        <div class="clear"></div>
+        <!-- Contact Page -->
+        <section id="contact">
+          <h1 class="pageTitle">Don't be shy, say hi!</h1>
+          <div class="right">
+            <h2>I respect your privacy and won't share your contact info with any third parties.</h2>
+            <img src="images/pdx.jpg">
+          </div>
+          <div class="left"> <!-- action="thank_you.html" method="post" -->
+              <form name="contact_me" >
+                <label for="name">Name: </label>
+                <input type="text" name="full_name" id="name" placeholder="Full Name"><br>
 
-        </div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email"placeholder="email@example.com"><br>
+
+                Would you like a reply? <br>
+                <label for="reply-yes">Yes</label>
+                <input type="radio" name="reply" value="yes" id="reply-yes">
+                <label for="reply-no">No </label>
+                <input type="radio" name="reply" value="no" id="reply-no">
+                <br>
+
+                How did you hear about me? <br>
+                <select name="referral_Source">
+                  <option value="work">Work</option>
+                  <option value="school">School</option>
+                  <option value="acquaintance">Mutual Acquaintance</option>
+                  <option value="other">Other</option>
+                </select><br>
+
+                What's on your mind? <br>
+                <textarea name="message" placeholder="Message goes here" id="contactMessage"></textarea>
+
+                <input type="submit" value="Send" onclick="submitForm(this.form.full_name.value)">
+              </form>
+            </div>
+          </section>
+          <div class="clear"></div>
+          <!-- Interests Page -->
+          <section id="interests">
+            <h1 class="pageTitle">Interests</h1>
+              <div class="right">
+                <img src="images/bwbike.jpg" >
+              </div>
+              <div class="left">
+                <p>Some Of My Favorite Things...</p>
+                <table>
+                  <tr>
+                    <td class="tablebk">Authors</td>
+                    <td class="tablebk">TV</td>
+                    <td class="tablebk">Activities</td>
+                  </tr>
+                  <tr>
+                    <td>David Sedaris</td>
+                    <td>Six Feet Under</td>
+                    <td>Bicyling</td>
+                  </tr>
+                  <tr>
+                    <td>Sarah Vowell</td>
+                    <td>Buffy the Vampire Slayer</td>
+                    <td>Reading</td>
+                  </tr>
+                  <tr>
+                    <td>Kurt Vonnegut</td>
+                    <td>Pretty Little Liars</td>
+                    <td>Walking my dog</td>
+                  </tr>
+                  <tr>
+                    <td>Edward Abbey</td>
+                    <td>Arrested Development</td>
+                    <td>Daydreaming</td>
+                  </tr>
+                </table>
+              </div>
+          </section>
+          <div class="clear"></div>
+          <!-- Game Page -->
+          <section id="game">
+            <h1 class="pageTitle">Let's Play a Game</h1>
+            <div class="left">
+              <h2>Instructions </h2>
+                <ol>
+                  <li>Read through all of the pages on this site.</li>
+                  <li>Absorb the information.</li>
+                  <li>Take this quiz to see how well you know me.</li>
+                </ol>
+            </div>
+            <div class="right">
+              <h2>Ready to play?</h2>
+              <button onclick='playGame();'>Yes</button>
+              <button onclick='noPlay();'>No</button>
+            </div>
+          </section>
     </div>
     <footer>
       <hr>
