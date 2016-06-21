@@ -13,13 +13,18 @@ $('.close').on('click', function(){
   $('.close').hide();
 });
 
-//navigation links
-  //grab .menu li
-  //on click
-    //prevent default
-    //hide all sections
-    //pull the data
-    //show the section id that matches the data
+//navigation link events
+$('.menu li a').on('click', function(event){
+  //prevent default
+  event.preventDefault();
+  //hide all sections
+  $('section').each(function(){
+      $(this).hide();
+  });
+  //pull the data
+  console.log($(this).data('link'));
+  //show the section id that matches the data
+});
 
 
 //active link color change
