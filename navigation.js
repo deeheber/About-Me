@@ -14,7 +14,12 @@ $('.close').on('click', function(){
 });
 
 //navigation links
-
+  //grab .menu li
+  //on click
+    //prevent default
+    //hide all sections
+    //pull the data
+    //show the section id that matches the data
 
 
 //active link color change
