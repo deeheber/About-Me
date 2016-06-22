@@ -5,17 +5,17 @@ $(document).ready(function() {
 });
 
 //navigation open/close
-$('.open').on('click', function(){
+$('.hamburger').on('click', function(){
   $('.menu').fadeIn(500);
   $('.menu li').show();
   $('.close').show();
-  $('.open').hide();
+  $('.hamburger').hide();
 });
 
 $('.close').on('click', function(){
   $('.menu li').hide();
   $('.menu').fadeOut(500);
-  $('.open').show();
+  $('.hamburger').show();
   $('.close').hide();
 });
 
