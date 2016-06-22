@@ -1,3 +1,9 @@
+//initial page load
+$(document).ready(function() {
+    $('section').hide();
+    $('#home').show();
+});
+
 //navigation open/close
 $('.open').on('click', function(){
   $('.menu').fadeIn(500);
@@ -15,15 +21,18 @@ $('.close').on('click', function(){
 
 //navigation link events
 $('.menu li a').on('click', function(event){
-  //prevent default
   event.preventDefault();
-  //hide all sections
-  $('section').each(function(){
-      $(this).hide();
+
+  $('section').hide();
+
+  var clickedLink = $(this).data('link');
+
+  $('section').each(function(index, el){
+      var currentSection = $(this);
+    if(currentSection.attr('id') == clickedLink){
+      currentSection.show();
+    }
   });
-  //pull the data
-  console.log($(this).data('link'));
-  //show the section id that matches the data
 });
 
 
