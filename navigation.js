@@ -8,15 +8,15 @@ $(document).ready(function() {
 $('.hamburger').on('click', function(){
   $('.menu').fadeIn(500);
   $('.menu li').show();
-  $('.close').show();
+  $('.cross').show();
   $('.hamburger').hide();
 });
 
-$('.close').on('click', function(){
+$('.cross').on('click', function(){
   $('.menu li').hide();
   $('.menu').fadeOut(500);
   $('.hamburger').show();
-  $('.close').hide();
+  $('.cross').hide();
 });
 
 //navigation link events
