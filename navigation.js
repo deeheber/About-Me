@@ -1,23 +1,25 @@
 //initial page load
 $(document).ready(function() {
-    $('section').hide();
     $('#home').show();
 });
 
 //navigation open/close
-$('.hamburger').on('click', function(){
+function openMenu(){
   $('.menu').fadeIn(500);
   $('.menu li').show();
   $('.cross').show();
   $('.hamburger').hide();
-});
+}
 
-$('.cross').on('click', function(){
+function closeMenu(){
   $('.menu li').hide();
   $('.menu').fadeOut(500);
   $('.hamburger').show();
   $('.cross').hide();
-});
+}
+
+$('.cross').on('click', closeMenu);
+$('.hamburger').on('click', openMenu);
 
 //navigation link events
 $('.menu li a').on('click', function(event){
@@ -33,6 +35,8 @@ $('.menu li a').on('click', function(event){
       currentSection.show();
     }
   });
+
+  closeMenu();
 });
 
 
