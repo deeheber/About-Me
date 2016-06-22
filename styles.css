@@ -49,6 +49,10 @@
     max-width: 100%;
   }
 
+  section {
+    display: none;
+  }
+
 
 /****Extra Styles ****/
   .socialIcon img {
@@ -119,6 +123,10 @@
     padding:1%;
   }
 
+  .clear {
+    clear: both;
+  }
+
   .main-content {
     overflow: hidden;
     margin: 1em;
@@ -161,11 +169,11 @@
     color: rgb(179, 179, 179);
   }
 
-  .open {
+  .hamburger {
     float: left;
   }
 
-  .close {
+  .cross {
     display: block;
     height: 2em;
     margin: 1em;
