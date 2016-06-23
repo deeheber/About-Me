@@ -46,8 +46,8 @@
             <h2>I respect your privacy and won't share your contact info with any third parties.</h2>
             <img src="images/pdx.jpg">
           </div>
-          <div class="left"> <!-- action="thank_you.html" method="post" -->
-              <form name="contact_me">
+          <div class="left">
+              <form name="contact_me" action="javascript:submitForm($('#name').val())" method="post">
                 <label for="name">Name: </label>
                 <input type="text" name="full_name" id="name" placeholder="Full Name"><br>
 
@@ -72,7 +72,7 @@
                 What's on your mind? <br>
                 <textarea name="message" placeholder="Message goes here" id="contactMessage"></textarea>
 
-                <input type="submit" value="Send" onclick="submitForm(this.form.full_name.value)">
+                <input type="submit" value="Send">
               </form>
             </div>
           </section>
