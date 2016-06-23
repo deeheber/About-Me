@@ -78,6 +78,11 @@
     line-height: 1.75em;
   }
 
+  form p {
+    font-size: 1em;
+    line-height: 1em;
+  }
+
   input {
     font-size: 0.75em;
   }
@@ -236,6 +241,10 @@
 
     form {
       font-size: 1em;
+    }
+
+    form p {
+      font-size: 0.75em;
     }
 
     #contactMessage {

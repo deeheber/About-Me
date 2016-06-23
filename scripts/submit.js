@@ -1,9 +1,9 @@
 function submitForm(userName) {
   if (userName){
-  alert("Thanks for saying hi, " + getFirstName(userName) + "!");
+    $('form').html("<p>Thanks for saying hi, " + getFirstName(userName) + "!</p><p>Note: This form doesn't actually submit anywhere yet, so contact me via social media instead.</p>");
   }
   else {
-    alert("Thanks for saying hi!")
+    $('form').html("<p>Thanks for saying hi!</p><p>Note: This form doesn't actually submit anywhere yet, so contact me via social media instead.</p>")
   }
 
 }
