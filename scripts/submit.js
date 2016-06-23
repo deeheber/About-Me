@@ -45,7 +45,7 @@ function reloadForm(){
       formString += 'What\'s on your mind? <br>';
       formString += '<textarea name="message" placeholder="Message goes here" id="contactMessage"></textarea>';
 
-      formString += '<input type="submit" value="Send">';
+      formString += '<br><input type="submit" value="Send">';
 
   $('form').html(formString);
 }
