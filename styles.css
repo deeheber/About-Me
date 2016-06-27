@@ -78,6 +78,11 @@
     line-height: 1.75em;
   }
 
+  form p {
+    font-size: 1em;
+    line-height: 1em;
+  }
+
   input {
     font-size: 0.75em;
   }
@@ -89,6 +94,20 @@
   #contactMessage {
     height: 5em;
     width: 25em;
+  }
+
+  #reload {
+    font-size: 0.75em;
+  }
+
+  input[type='submit']{
+    font-size: 0.75em;
+    border-color: #222;
+  }
+
+  input[type='submit']:hover {
+    background-color: #222;
+    color: white;
   }
 
 /****Table Styles ****/
@@ -236,6 +255,10 @@
 
     form {
       font-size: 1em;
+    }
+
+    form p {
+      font-size: 0.75em;
     }
 
     #contactMessage {
