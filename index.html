@@ -2,19 +2,19 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
     <title>About Me</title>
   </head>
   <body>
     <div class="main-content">
-      <img src="images/hamburger.png" class="hamburger">
+      <img src="/images/hamburger.png" class="hamburger">
       <nav class="menu">
-        <img src="images/cross.png" class="cross">
+        <img src="/images/cross.png" class="cross">
         <ul>
-          <li><a data-link="home">Home</a></li>
-          <li><a data-link="contact">Contact</a></li>
-          <li><a data-link="interests">Interests</a></li>
-          <li><a data-link="game">Game</a></li>
+          <li><a data-link="home" href="/">Home</a></li>
+          <li><a data-link="contact" href="/contact">Contact</a></li>
+          <li><a data-link="interests" href="/interests">Interests</a></li>
+          <li><a data-link="game" href="/game">Game</a></li>
         </ul>
       </nav>
 
@@ -22,7 +22,7 @@
       <section id="home">
         <h1 class="pageTitle">Danielle H</h1>
           <div class="right">
-            <img src="images/danielle.jpeg">
+            <img src="/images/danielle.jpeg">
           </div>
           <div class="left">
               <p>I'm a creative individual with a commitment to life long learning powered by a strong belief that technology can transform people's lives.</p>
@@ -46,7 +46,7 @@
           <h1 class="pageTitle">Don't Be Shy, Say Hi!</h1>
           <div class="right">
             <h2>I respect your privacy and won't share your contact info with any third parties.</h2>
-            <img src="images/pdx.jpg">
+            <img src="/images/pdx.jpg">
           </div>
           <div class="left">
               <form name="contact_me" action="javascript:submitForm($('#name').val())" method="post">
@@ -84,7 +84,7 @@
           <section id="interests">
             <h1 class="pageTitle">Interests</h1>
               <div class="right">
-                <img src="images/bwbike.jpg" >
+                <img src="/images/bwbike.jpg" >
               </div>
               <div class="left">
                 <p>Some Of My Favorite Things...</p>
@@ -118,7 +118,7 @@
               </div>
           </section>
           <div class="clear"></div>
-          
+
           <!-- Game Page -->
           <section id="game">
             <h1 class="pageTitle">Let's Play a Game</h1>
@@ -140,16 +140,21 @@
     <footer>
       <hr>
       <p>All opinions on the internets are my own</p>
-      <a class="socialIcon" href="https://instagram.com/deeheber/" target="_blank"><img src="images/Instagram.png"></a>
-      <a class="socialIcon" href="https://www.linkedin.com/in/daheber" target="_blank"><img src="images/LinkedIn.png"></a>
-      <a class="socialIcon" href="https://github.com/deeheber" target="_blank"><img src="images/Github.png"></a>
+      <a class="socialIcon" href="https://instagram.com/deeheber/" target="_blank"><img src="/images/Instagram.png"></a>
+      <a class="socialIcon" href="https://www.linkedin.com/in/daheber" target="_blank"><img src="/images/LinkedIn.png"></a>
+      <a class="socialIcon" href="https://github.com/deeheber" target="_blank"><img src="/images/Github.png"></a>
       <p>&copy; 2016</p>
     </footer>
     </div>
     <!-- JavaScript Files -->
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
-    <script type="text/javascript" src="scripts/navigation.js"></script>
-    <script type="text/javascript" src="scripts/submit.js"></script>
-    <script type="text/javascript" src="scripts/game.js"></script>
+    <script type="text/javascript" src="/scripts/page.js"></script>
+
+    <script type="text/javascript" src="/scripts/navigation.js"></script>
+    <script type="text/javascript" src="/scripts/submit.js"></script>
+    <script type="text/javascript" src="/scripts/game.js"></script>
+
+    <script type="text/javascript" src="/scripts/controllers.js"></script>
+    <script type="text/javascript" src="/scripts/routes.js"></script>
   </body>
 </html>
