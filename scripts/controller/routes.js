@@ -1,8 +1,8 @@
-page('/', controllers.home);
+page('/About-Me', controllers.home);
 
 page('/About-Me/contact', controllers.contact);
-page('/interests', controllers.interests);
-page('/game', controllers.game);
+page('/About-Me/interests', controllers.interests);
+page('/About-Me/game', controllers.game);
 
 page('*', controllers.notFound);
 
