@@ -1,7 +1,6 @@
 page('/', controllers.home);
-page('/home', '/');
 
-page('/contact', controllers.contact);
+page('/About-Me/contact', controllers.contact);
 page('/interests', controllers.interests);
 page('/game', controllers.game);
 
