@@ -8,7 +8,7 @@
 
     //update the active link color
     $( '.menu ul a' ).removeClass('active');
-    $( 'a[href="/"]' ).addClass('active');
+    $( 'a[href="/About-Me"]' ).addClass('active');
   };
 
   controllers.contact = function(ctx, next){
@@ -18,7 +18,7 @@
 
     //update the active link color
     $( '.menu ul a' ).removeClass('active');
-    $( 'a[href="/contact"]' ).addClass('active');
+    $( 'a[href="/About-Me/contact"]' ).addClass('active');
   };
 
   controllers.interests = function(ctx, next){
@@ -28,7 +28,7 @@
 
     //update the active link color
     $( '.menu ul a' ).removeClass('active');
-    $( 'a[href="/interests"]' ).addClass('active');
+    $( 'a[href="/About-Me/interests"]' ).addClass('active');
   };
 
   controllers.game = function(ctx, next){
@@ -38,7 +38,7 @@
 
     //update the active link color
     $( '.menu ul a' ).removeClass('active');
-    $( 'a[href="/game"]' ).addClass('active');
+    $( 'a[href="/About-Me/game"]' ).addClass('active');
   };
 
   controllers.notFound = function(ctx, next){
